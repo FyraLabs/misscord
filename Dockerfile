@@ -13,4 +13,4 @@ FROM redhat/ubi9:latest
 RUN useradd -u 1001 misscord
 USER 1001
 COPY --from=build-env --chown=misscord /app/misscord /usr/bin/misscord
-CMD ["chisel-operator"]
+CMD ["misscord"]
