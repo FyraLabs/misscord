@@ -918,7 +918,7 @@ dependencies = [
 [[package]]
 name = "misskey"
 version = "0.2.0"
-source = "git+https://github.com/poppingmoon/misskey-rs#feature/13.13.2#0396a2944afad417527b6724342eb19c89499266"
+source = "git+https://github.com/poppingmoon/misskey-rs?branch=feature/13.13.2#0396a2944afad417527b6724342eb19c89499266"
 dependencies = [
  "misskey-api",
  "misskey-core",
@@ -930,7 +930,7 @@ dependencies = [
 [[package]]
 name = "misskey-api"
 version = "0.2.0"
-source = "git+https://github.com/poppingmoon/misskey-rs#feature/13.13.2#0396a2944afad417527b6724342eb19c89499266"
+source = "git+https://github.com/poppingmoon/misskey-rs?branch=feature/13.13.2#0396a2944afad417527b6724342eb19c89499266"
 dependencies = [
  "chrono",
  "mime",
@@ -948,7 +948,7 @@ dependencies = [
 [[package]]
 name = "misskey-core"
 version = "0.2.0"
-source = "git+https://github.com/poppingmoon/misskey-rs#feature/13.13.2#0396a2944afad417527b6724342eb19c89499266"
+source = "git+https://github.com/poppingmoon/misskey-rs?branch=feature/13.13.2#0396a2944afad417527b6724342eb19c89499266"
 dependencies = [
  "futures-core",
  "futures-sink",
@@ -960,7 +960,7 @@ dependencies = [
 [[package]]
 name = "misskey-http"
 version = "0.2.0"
-source = "git+https://github.com/poppingmoon/misskey-rs#feature/13.13.2#0396a2944afad417527b6724342eb19c89499266"
+source = "git+https://github.com/poppingmoon/misskey-rs?branch=feature/13.13.2#0396a2944afad417527b6724342eb19c89499266"
 dependencies = [
  "async-dup",
  "common-multipart-rfc7578",
@@ -978,7 +978,7 @@ dependencies = [
 [[package]]
 name = "misskey-util"
 version = "0.1.0"
-source = "git+https://github.com/poppingmoon/misskey-rs#feature/13.13.2#0396a2944afad417527b6724342eb19c89499266"
+source = "git+https://github.com/poppingmoon/misskey-rs?branch=feature/13.13.2#0396a2944afad417527b6724342eb19c89499266"
 dependencies = [
  "chrono",
  "derivative",
@@ -996,7 +996,7 @@ dependencies = [
 [[package]]
 name = "misskey-websocket"
 version = "0.2.0"
-source = "git+https://github.com/poppingmoon/misskey-rs#feature/13.13.2#0396a2944afad417527b6724342eb19c89499266"
+source = "git+https://github.com/poppingmoon/misskey-rs?branch=feature/13.13.2#0396a2944afad417527b6724342eb19c89499266"
 dependencies = [
  "async-rwlock",
  "async-tungstenite",

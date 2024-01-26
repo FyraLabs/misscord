@@ -24,7 +24,7 @@ async fn relay_antenna_to_discord(
     let mut channel = client.antenna_timeline(id).await?;
 
     while let Some(note) = channel.try_next().await? {
-        let note_url = url.join("notes")?.join(&note.id.to_string())?;
+        let note_url = url.join("notes/")?.join(&note.id.to_string())?;
         discord_client
             .send(|message| message.content(note_url.as_str()))
             .await
@@ -47,7 +47,7 @@ async fn main() -> Result<()> {
 
     streaming_url
         .set_scheme("wss")
-        .map_err(|_| eyre!("Could not change URL scheme to wss"))?;
+        .map_err(|_| eyre!("Could not change URL scheme to wss"))?;
 
     let client = WebSocketClient::builder(streaming_url)
         .token(misskey_token)
