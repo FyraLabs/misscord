@@ -7,6 +7,7 @@ use futures::{future::try_join_all, stream::TryStreamExt};
 use misskey::{
     model::{antenna::Antenna, id::Id},
     prelude::*,
+    websocket::ReconnectCondition,
     WebSocketClient,
 };
 use std::env;
@@ -51,6 +52,7 @@ async fn main() -> Result<()> {
 
     let client = WebSocketClient::builder(streaming_url)
         .token(misskey_token)
+        .reconnect_condition(ReconnectCondition::always())
         .connect()
         .await?;
 
