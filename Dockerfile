@@ -1,4 +1,4 @@
-FROM node:lts-alpine as build-runner
+FROM node:22-alpine as build-runner
 
 WORKDIR /tmp/app
 
@@ -13,7 +13,7 @@ COPY tsconfig.json .
 
 RUN pnpm run build
 
-FROM node:lts-alpine as prod-deps-runner
+FROM node:22-alpine as prod-deps-runner
 
 WORKDIR /tmp/app
 
@@ -23,7 +23,7 @@ COPY pnpm-lock.yaml .
 RUN npm install -g pnpm
 RUN pnpm install --frozen-lockfile --only=production
 
-FROM node:lts-alpine as prod-runner
+FROM node:22-alpine as prod-runner
 
 WORKDIR /app
 
