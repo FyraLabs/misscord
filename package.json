@@ -1,0 +1,25 @@
+{
+  "name": "misscord",
+  "type": "module",
+  "version": "0.2.0",
+  "description": "A Misskey antenna to Discord bridge",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "node .",
+    "build": "tsc",
+    "dev": "tsx --watch ./index.ts"
+  },
+  "keywords": [],
+  "author": "Lleyton Gray <lleyton@fyralabs.com>",
+  "license": "GPL-3.0-only",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "misskey-js": "^2024.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.10",
+    "prettier": "^3.2.5",
+    "tsx": "^4.9.3",
+    "typescript": "^5.4.5"
+  }
+}
