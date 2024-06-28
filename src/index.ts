@@ -49,10 +49,10 @@ if (healthCheckPort) {
       res.writeHead(stream.state === "connected" ? 200 : 500);
       res.end();
     })
-    .listen(Number.parseInt(healthCheckPort), "127.0.0.1");
+    .listen(Number.parseInt(healthCheckPort), "0.0.0.0");
 
   console.log(
-    `Started listening for healthchecks on http://127.0.0.1:${healthCheckPort}`,
+    `Started listening for healthchecks on http://0.0.0.0:${healthCheckPort}`,
   );
 }
 
